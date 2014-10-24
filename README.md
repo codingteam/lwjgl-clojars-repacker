@@ -6,5 +6,5 @@ Quick usage example:
     $ unzip lwjgl-2.9.1.zip
     $ ./repack.sh lwjgl-2.9.1/native 2.9.1
 
-You'll `lwjgl-platform-natives-2.9.1.jar` and `pom.xml` which you can
+You'll get `lwjgl-platform-natives-2.9.1.jar` and `pom.xml` which you can
 upload to [clojars.org](http://clojars.org/).
