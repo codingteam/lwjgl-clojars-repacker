@@ -68,6 +68,8 @@ function usage {
     echo "Usage: ./repack.sh <version> <origin-lwjgl-folder>"
 }
 
+[ $# -eq 0 ] && { usage; exit 1; }
+
 ORIGINAL_NATIVE_FOLDER="$1"
 VERSION="$2"
 PLATFORM_NATIVES_FILENAME="lwjgl-platform-natives-${VERSION}.jar"
