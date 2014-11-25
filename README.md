@@ -2,12 +2,12 @@
 
 Quick usage example:
 
-    $ wget http://cznic.dl.sourceforge.net/project/java-game-lib/Official%20Releases/LWJGL%202.9.1/lwjgl-2.9.1.zip
-    $ unzip lwjgl-2.9.1.zip
-    $ ./repack.sh lwjgl-2.9.1/native 2.9.1
+    $ ./repack.sh lwjgl.ticket
+    $ ./repack.sh jinput.ticket
 
-You'll get `lwjgl-platform-natives-2.9.1.jar` and `pom.xml` which you can
-upload to [clojars.org](http://clojars.org/).
+You'll get two folders `lwjgl-platform-natives` and
+`jinput-platform-natives` with jars and poms that you can upload to
+[clojars.org](http://clojars.org/).
 
 To upload the artifacts you first need to register at [clojars.org](http://clojars.org/). Then create a `~/.m2/settings.xml` file with the following content:
 
