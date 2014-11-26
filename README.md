@@ -1,5 +1,8 @@
 # LWJGL repacker script for clojars
 
+[![lwjgl on Clojars](http://clojars.org/ru.org.codingteam/lwjgl-platform-natives/latest-version.svg)](http://clojars.org/ru.org.codingteam/lwjgl-platform-natives)
+[![jinput on Clojars](http://clojars.org/ru.org.codingteam/jinput-platform-natives/latest-version.svg)](http://clojars.org/ru.org.codingteam/jinput-platform-natives)
+
 Quick usage example:
 
     $ ./repack.sh lwjgl.ticket
