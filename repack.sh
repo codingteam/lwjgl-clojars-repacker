@@ -21,7 +21,7 @@ read -d '' POM_XML << EOF
 EOF
 
 REPO_URL="https://repo1.maven.org/maven2"
-BASE_URL="${REPO_URL}/${GROUP_ID//\./\/}/${ARTIFACT_ID}/${VERSION}"
+BASE_URL="${REPO_URL}/${GROUP_ID//.//}/${ARTIFACT_ID}/${VERSION}"
 
 PLATFORMS=("linux:linux" "osx:macosx" "windows:windows")
 ARCHS=("x86" "x86_64")
