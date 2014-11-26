@@ -32,3 +32,5 @@ To upload the artifacts you first need to register at [clojars.org](http://cloja
 After that, load the file with Maven:
 
     mvn deploy:deploy-file -Dfile=lwjgl-platform-natives-2.9.1.jar -Durl=https://clojars.org/repo -DrepositoryId=clojars -DpomFile=pom.xml
+
+The `upload.sh` script will upload both artifacts to `clojars` repository.
