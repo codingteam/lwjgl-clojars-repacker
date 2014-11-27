@@ -14,9 +14,9 @@ read -d '' POM_XML << EOF
 <project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.clojars.rexim</groupId>
-  <artifactId>ARTIFACT_ID-natives</artifactId>
-  <version>VERSION</version>
-  <description>Native dependencies for ARTIFACT_ID</description>
+  <artifactId>${ARTIFACT_ID}-natives</artifactId>
+  <version>${VERSION}</version>
+  <description>Native dependencies for ${ARTIFACT_ID}</description>
 </project>
 EOF
 
@@ -48,7 +48,7 @@ for PLATFORM in "${PLATFORMS[@]}"; do
 done
 
 jar cfMv "${ARTIFACT_ID}-natives-${VERSION}.jar" native
-echo "${POM_XML}" | m4 -DVERSION="${VERSION}" -DARTIFACT_ID="${ARTIFACT_ID}" - > pom.xml
+echo "${POM_XML}" > pom.xml
 rm -rf native
 
 cd ..
